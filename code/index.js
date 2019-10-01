@@ -281,12 +281,12 @@ console.log("\n\n\n\n\n\n\n\n\n\n");
 // slide #5
 // promise.all 
 
-// const facebook_api = Promise.resolve("data from facebook api");
-// const twitter_api = Promise.resolve("data from twitter api ");
+const facebook_api = Promise.resolve("data from facebook api");
+const twitter_api = Promise.reject("data from twitter api ");
 
-// Promise.all([facebook_api , twitter_api ])
-//    .then(apis =>  console.log(apis))
-//    .catch(err => console.log(err));
+Promise.all([facebook_api , twitter_api ])
+   .then(apis =>  console.log(apis))
+   .catch(err => console.log(err));
 
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
